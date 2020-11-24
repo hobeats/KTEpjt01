@@ -2,9 +2,8 @@ package inGame;
 
 public class Player {
 	private String userID;
-	private boolean status;
+	private String status;
 	private Player job;
-	private boolean getReady;
 	
 	public String getUserID() {
 		return userID;
@@ -14,11 +13,11 @@ public class Player {
 		this.userID = userID;
 	}
 	
-	public boolean isStatus() {
+	public String isStatus() {
 		return status;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 
@@ -33,5 +32,26 @@ public class Player {
 	@Override
 	public String toString() {
 		return "Player" + userID + "의 직업은 " + job +"입니다.";
+	}
+}
+
+class Mafia extends Player {
+	//킬
+	public void kill(String userID) {
+		
+	}
+}
+class Police extends Player {
+	//탐색
+	public String detect(String userID) {
+		
+		Player p = null;
+		return p.toString();
+	}
+}
+
+class Doctor extends Player {
+	public void heal(String userID) {
+		
 	}
 }

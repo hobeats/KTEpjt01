@@ -7,11 +7,55 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+class GameRoomInfo{
+	private int numOfUser;
+	private int numOfLife;
+	private int numOfMafia;
+	private int numOfPolice;
+	private boolean dayOrNight;
+
+	public int getNumOfUser() {
+		return numOfUser;
+	}
+
+	public void setNumOfUser(int numOfUser) {
+		this.numOfUser = numOfUser;
+	}
+	
+	public int getNumOfLife() {
+		return numOfLife;
+	}
+
+	public int getNumOfMafia() {
+		return numOfMafia;
+	}
+
+	public void setNumOfMafia(int numOfMafia) {
+		this.numOfMafia = numOfMafia;
+	}
+
+	public int getNumOfPolice() {
+		return numOfPolice;
+	}
+
+	public void setNumOfPolice(int numOfPolice) {
+		this.numOfPolice = numOfPolice;
+	}
+
+	public boolean isDayOrNight() {
+		return dayOrNight;
+	}
+
+	public void setDayOrNight(boolean dayOrNight) {
+		this.dayOrNight = dayOrNight;
+	}
+}
+
 public class GameProgress {
 
 	private static ArrayList<Boolean> voteList;
 	private static ArrayList<String> selUserList;
-	private static GameRoom gr;
+	private static GameRoomInfo gr;
 
 	public static void main(String[] args) {
 		startGame();
@@ -19,7 +63,7 @@ public class GameProgress {
 
 	// 게임 시작
 	private static void startGame() {
-		gr = new GameRoom();
+		gr = new GameRoomInfo();
 		gr.setDayOrNight(false);
 		switchDay();
 		setJob();
@@ -81,7 +125,7 @@ public class GameProgress {
 		} else {
 			// 찬반 수 계산
 			voteList = new ArrayList<>();
-			Set<Boolean> result = new HashSet<Boolean>(voteList);
+//			Set<Boolean> result = new HashSet<Boolean>(voteList);
 			int numOfTrue = Collections.frequency(voteList, true);
 			if (numOfTrue > (int) (gr.getNumOfLife() / 2)) {
 
