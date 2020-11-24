@@ -3,7 +3,7 @@ package inGame;
 public class Player {
 	private String userID;
 	private String status;
-	private Player job;
+	private String job = "Player";
 	
 	public String getUserID() {
 		return userID;
@@ -21,11 +21,11 @@ public class Player {
 		this.status = status;
 	}
 
-	public Player getJob() {
+	public String getJob() {
 		return job;
 	}
 
-	public void setJob(Player job) {
+	public void setJob(String job) {
 		this.job = job;
 	}
 	
@@ -34,25 +34,6 @@ public class Player {
 		return "Player" + userID + "의 직업은 " + job +"입니다.";
 	}
 	
-	class Mafia extends Player {
-		//킬
-		public void kill(String userID) {
-			
-		}
-	}
-	class Police extends Player {
-		//탐색
-		public String detect(String userID) {
-			
-			return "";
-		}
-	}
-
-	class Doctor extends Player {
-		public void heal(String userID) {
-			
-		}
-	}
 }
 
 
