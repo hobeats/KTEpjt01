@@ -15,6 +15,8 @@ public class GameRoom extends Application {
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
+//			GameRoomController con = loader.getController();
+//			con.setPrimaryStage(primaryStage);
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

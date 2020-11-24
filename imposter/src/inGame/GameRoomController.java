@@ -11,6 +11,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCharacterCombination;
+import javafx.scene.input.KeyCombination;
+import javafx.scene.input.Mnemonic;
+import javafx.stage.Stage;
 
 public class GameRoomController implements Initializable {
 	@FXML
@@ -21,10 +25,10 @@ public class GameRoomController implements Initializable {
 	private TextField chatField;
 	@FXML
 	private TableView<String> deadInfo, roomUser;
+	private Stage primaryStage;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		chatField.requestFocus();
 		getStart();
 	}
 	
@@ -53,5 +57,12 @@ public class GameRoomController implements Initializable {
 			
 		});
 	}
+
+//	public void setPrimaryStage(Stage primaryStage) {
+//		this.primaryStage = primaryStage;
+//		KeyCombination kc = new KeyCharacterCombination("r",KeyCombination.CONTROL_DOWN);
+//		Mnemonic mn = new Mnemonic(btnStart, kc);
+//		primaryStage.getScene().addMnemonic(mn);
+//	}
 	
 }

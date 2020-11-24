@@ -33,25 +33,26 @@ public class Player {
 	public String toString() {
 		return "Player" + userID + "의 직업은 " + job +"입니다.";
 	}
+	
+	class Mafia extends Player {
+		//킬
+		public void kill(String userID) {
+			
+		}
+	}
+	class Police extends Player {
+		//탐색
+		public String detect(String userID) {
+			
+			return "";
+		}
+	}
+
+	class Doctor extends Player {
+		public void heal(String userID) {
+			
+		}
+	}
 }
 
-class Mafia extends Player {
-	//킬
-	public void kill(String userID) {
-		
-	}
-}
-class Police extends Player {
-	//탐색
-	public String detect(String userID) {
-		
-		Player p = null;
-		return p.toString();
-	}
-}
 
-class Doctor extends Player {
-	public void heal(String userID) {
-		
-	}
-}
