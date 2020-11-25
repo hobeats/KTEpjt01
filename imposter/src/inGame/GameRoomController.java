@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.ResourceBundle;
 import java.util.Set;
 
@@ -29,21 +30,25 @@ public class GameRoomController implements Initializable {
 	private TextField chatField;
 	@FXML
 	private TableView<String> deadInfo, roomUser;
-//	private Stage primaryStage;
-
+	
 	static List<Player> userList;
 	static List<Player> deadList;
 	static List<Boolean> voteList;
 	static List<String> selUserList;
 	static GameRoomInfo gr;
+	int roomNum;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-//		getStart();
+		userList = new ArrayList<>();
 		startGame();
 
 	}
-
+	
+	public void receiveUserList(Map<Integer, List<Player>> players) {
+		
+	}	
+	
 	public void getStart() {
 		btnStart.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

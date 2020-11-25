@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+	prefWidth="400.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="view.MemberController">
+	<top>
+		<ImageView fitHeight="236.0" fitWidth="400.0"
+			pickOnBounds="true" preserveRatio="true"
+			BorderPane.alignment="CENTER" />
+	</top>
+	<center>
+		<StackPane prefHeight="150.0" prefWidth="200.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<AnchorPane fx:id="loginAnchor" prefHeight="200.0"
+					prefWidth="200.0">
+					<children>
+						<Label layoutX="100.0" layoutY="146.0" text="아이디" />
+						<TextField fx:id="loginID" layoutX="167.0"
+							layoutY="142.0" />
+						<Label layoutX="149.0" layoutY="81.0" text="로그인">
+							<font>
+								<Font size="36.0" />
+							</font>
+						</Label>
+						<Label layoutX="100.0" layoutY="178.0" text="비밀번호" />
+						<PasswordField fx:id="loginPW" layoutX="167.0"
+							layoutY="174.0" />
+						<Button fx:id="memberLoginBtn" layoutX="105.0"
+							layoutY="261.0" mnemonicParsing="false" prefHeight="23.0"
+							prefWidth="92.0" text="입장" />
+						<Hyperlink fx:id="findLinkBtn" layoutX="96.0"
+							layoutY="207.0" text="아이디/비밀번호 찾기">
+							<font>
+								<Font size="11.0" />
+							</font>
+						</Hyperlink>
+						<Hyperlink fx:id="joinLinkBtn" layoutX="96.0"
+							layoutY="232.0" text="회원가입">
+							<font>
+								<Font size="11.0" />
+							</font>
+						</Hyperlink>
+						<Button fx:id="nonMemberLoginBtn" layoutX="213.0"
+							layoutY="261.0" mnemonicParsing="false" prefHeight="23.0"
+							prefWidth="92.0" text="비회원 입장" />
+					</children>
+				</AnchorPane>
+				<AnchorPane fx:id="joinAnchor" prefHeight="200.0"
+					prefWidth="200.0" visible="false">
+					<children>
+						<Label layoutX="128.0" layoutY="37.0" text="회원가입">
+							<font>
+								<Font size="36.0" />
+							</font>
+						</Label>
+						<Label layoutX="70.0" layoutY="215.0" text="비밀번호" />
+						<Label layoutX="70.0" layoutY="108.0" text="아이디" />
+						<Label layoutX="70.0" layoutY="242.0" text="비밀번호 확인" />
+						<Label layoutX="70.0" layoutY="188.0" text="닉네임" />
+						<Label layoutX="70.0" layoutY="269.0" text="비밀번호 찾기 질문" />
+						<Label layoutX="70.0" layoutY="296.0" text="비밀번호 찾기 답" />
+						<TextField fx:id="joinID" layoutX="193.0"
+							layoutY="104.0" />
+						<TextField fx:id="joinNickName" layoutX="193.0"
+							layoutY="184.0" />
+						<TextField fx:id="findPWA" layoutX="193.0"
+							layoutY="292.0" />
+						<PasswordField fx:id="joinPW" layoutX="193.0"
+							layoutY="211.0" />
+						<PasswordField fx:id="joinRePW" layoutX="193.0"
+							layoutY="238.0" />
+						<Button fx:id="btnJoin" layoutX="131.0" layoutY="329.0"
+							mnemonicParsing="false" text="회원가입" />
+						<Button fx:id="btnBack" layoutX="205.0" layoutY="329.0"
+							mnemonicParsing="false" prefWidth="64.0" text="뒤로" />
+						<TextField fx:id="joinName" layoutX="193.0"
+							layoutY="131.0" />
+						<Label layoutX="70.0" layoutY="135.0" text="이름" />
+						<Label layoutX="70.0" layoutY="161.0" text="이메일" />
+						<TextField fx:id="joinIEmail" layoutX="193.0"
+							layoutY="157.0" />
+						<ComboBox fx:id="findPWQ" layoutX="193.0" layoutY="265.0"
+							prefWidth="150.0" />
+					</children>
+				</AnchorPane>
+				<AnchorPane fx:id="findAnchor" prefHeight="200.0"
+					prefWidth="200.0" visible="false">
+					<children>
+						<Label layoutX="105.0" layoutY="98.0" text="이름" />
+						<Label layoutX="104.0" layoutY="29.0" text="아이디 찾기">
+							<font>
+								<Font size="36.0" />
+							</font>
+						</Label>
+						<Label layoutX="86.0" layoutY="179.0" text="비밀번호 찾기">
+							<font>
+								<Font size="36.0" />
+							</font>
+						</Label>
+						<Label layoutX="105.0" layoutY="129.0" text="이메일" />
+						<TextField fx:id="findName" layoutX="158.0"
+							layoutY="94.0" />
+						<TextField fx:id="findEmail" layoutX="158.0"
+							layoutY="125.0" />
+						<TextField fx:id="findID" layoutX="196.0"
+							layoutY="231.0" />
+						<Label layoutX="67.0" layoutY="266.0" text="비밀번호 찾기 질문" />
+						<Label layoutX="68.0" layoutY="235.0" text="아이디" />
+						<Label layoutX="67.0" layoutY="295.0" text="비밀번호 찾기 답" />
+						<TextField fx:id="findA" layoutX="196.0" layoutY="291.0" />
+						<ComboBox fx:id="findQ" layoutX="184.0" layoutY="262.0"
+							prefWidth="150.0" />
+						<Button fx:id="btnFind" layoutX="111.0" layoutY="327.0"
+							mnemonicParsing="false" prefWidth="64.0" text="찾기" />
+						<Button fx:id="btnBack2" layoutX="226.0" layoutY="327.0"
+							mnemonicParsing="false" prefWidth="64.0" text="뒤로" />
+					</children>
+				</AnchorPane>
+			</children>
+		</StackPane>
+	</center>
+</BorderPane>
