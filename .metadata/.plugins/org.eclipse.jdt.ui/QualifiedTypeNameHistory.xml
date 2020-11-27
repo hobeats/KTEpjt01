@@ -5,14 +5,18 @@
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-<fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
-<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
 <fullyQualifiedTypeName name="javafx.scene.control.TableView"/>
 <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
 <fullyQualifiedTypeName name="javafx.scene.input.KeyCombination"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="inGame.GameProgress"/>
 <fullyQualifiedTypeName name="javafx.application.Platform"/>
+<fullyQualifiedTypeName name="javafx.application.Application"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+<fullyQualifiedTypeName name="java.awt.Choice"/>
+<fullyQualifiedTypeName name="javafx.scene.control.ChoiceBox"/>
+<fullyQualifiedTypeName name="javafx.scene.control.ComboBox"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
